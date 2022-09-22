@@ -1,15 +1,15 @@
-<h1>Articles</h1>
+<h1>Cheese Articles</h1>
 
-Our blog has <%= Article.public_count %> articles and counting!
-
-<ul>
+<div class='intro'>
+  Our blog has <%= Article.public_count %>  cheesey articles and counting!
+</div>
+<ul class='article-container'>
   <% @articles.each do |article| %>
     <% unless article.archived? %>
-      <li>
+      <div class='article-link'>
         <%= link_to article.title, article %>
-      </li>
+      </div>
     <% end %>
   <% end %>
 </ul>
 
-<%= link_to "New Article", new_article_path %>
