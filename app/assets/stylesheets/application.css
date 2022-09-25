@@ -21,10 +21,17 @@
    font-family: Arial, Helvetica, sans-serif;
  }
 
+ body {
+   display: flex;
+   min-height: 98vh;
+   flex-direction: column;
+ }
+
  h1 {
    display: flex;
    justify-content: center;
    text-shadow: rgb(229, 162, 80) 2px 3px;
+   font-size: 48px
  }
 
  .header {
@@ -34,6 +41,8 @@
 
  a {
   color: rgb(206 82 0);
+  font-size: 20px;
+  font-weight: bold
  }
 
  .intro {
@@ -47,10 +56,17 @@
  .article-link {
    display: flex;
    justify-content: center;
-   border: 3px solid rgb(255, 219, 60);
    border-radius: 4px;
    margin: 10px;
-   padding: 10px;
+   padding: 20px;
+   background-color: lightsalmon;
+   box-shadow: white 8px 8px 2px;
+  }
+
+ a.article-link {
+   color: black;
+   font-size: 1.2rem;
+   font-weight: bold;
  }
 
  .article-container {
@@ -59,3 +75,91 @@
    padding: 0;
  }
 
+.show-links {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 3rem;
+}
+
+.show-links a {
+  padding: 0.8rem 5rem;
+  background-color: white;
+  border-radius: 8px;
+  
+}
+
+.article-body {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: lightsalmon;
+  border-radius: 6px;
+  box-shadow: orange 4px 4px 9px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+label,
+input,
+textarea,
+select {
+  font-size: 1.3rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  background-color: white;
+  border: black 2px solid;
+  border-radius: 5px;
+  width: 80%;
+  margin: 8px;
+  padding: 6px;
+}
+
+select {
+  text-align: center;
+}
+
+form {
+  width: 25em;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  height: 80vh;
+}
+
+.submit {
+  margin-top: 2rem;
+}
+
+textarea {
+  height: 100px;
+}
+
+.comment-header form {
+  margin: 20px;
+  text-align: left;
+}
+
+.comment-header h2 {
+  text-shadow: rgb(229, 162, 80) 2px 3px;
+  margin: 20px;
+  font-size: 28px;
+}
+
+.comment-card {
+  margin: 10px;
+  border: 2px solid orange;
+  padding: 10px;
+  border-radius: 8px;
+}
